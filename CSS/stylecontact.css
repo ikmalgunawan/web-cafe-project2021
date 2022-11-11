@@ -1,0 +1,291 @@
+*{
+    padding : 0;
+    margin :0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.error{
+    color: red;
+    font-size: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f2f2f2;
+}
+header{
+    background-color: #036635;
+    padding : 24px 0;
+    color : white;
+    top : 0;
+    width : 100%;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    display: flex;
+}
+.contact h3{
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+}
+@media(max-width : 800px){
+    header{
+        padding: 20px;
+    }
+    .contact h3{
+        margin-left : 0px;
+    }
+}
+nav{
+    margin-right: 26px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    position: relative;
+    float: left;
+    text-decoration: none;
+}
+nav ul li a{
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: rgb(168, 168, 168);
+    color : white;
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 142px;
+    background: #fff;
+    display: none;
+}
+nav ul li ul li{
+    width: 100%;
+    border-top: 1px solid black;
+}
+nav ul li ul li a{
+    background: green;
+    font-size: 16px;
+}
+nav ul li:hover > ul{
+    display: inline-block;
+}
+@media(max-width : 800px){
+    nav ul{
+        display: flex;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .contact{
+        display: none;
+    }
+    nav ul li ul{
+        width : 120px;
+    }
+    nav ul li ul li a{
+        font-size: 16px;
+    }
+}
+
+.free marquee{
+    font-family: 'Poppins';
+    font-size: 23px;
+    margin-top: 30px;
+}
+.contactbox{
+    width : 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    margin: 50px 0;
+    margin-left: 240px;
+    margin-top: 45px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactbox>*{
+    width: 50%;
+}
+.contactbox .box1{
+    background: linear-gradient(40deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('kopi3.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactbox .box1 .title{
+    margin : 26px 0;
+}
+@media(max-width : 800px){
+.contactbox .box1 .title{
+    margin : 88px 0;
+}
+}
+.title h1{
+    color : #fff;
+    font-size : 30px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+.box2{
+    padding : 30px;
+
+}
+.box2 h2{
+    font-size: 30px;
+    color : black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box2 form{
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+}
+.box2 .form-group label{
+    width : 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.textmessage{
+    resize : none;
+    width : 180px;
+    height : 120px;
+}
+@media(max-width : 800px){
+    .box2 h2{
+        font-size : 25px;
+    }
+    .title h1{
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+    .free marquee{
+        font-size : 18px;
+    }
+}
+input[type="submit"]{
+    background-color: #128b5f;
+    margin-top: 6px;
+    color : white;
+    padding: 10px 14px;
+    border : none;
+    border-radius : 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #036635;
+}
+@media(max-width : 800px){
+    .contactbox{
+        flex-direction: column;
+        width : 90vw;
+        margin-left: 24px;
+    }
+    .contactbox > *{
+        width: 100%;
+
+    }
+    .contactbox .box1{
+        padding : 40px 0;
+    }
+}
+footer{
+    background-color: #036635;
+    bottom: 0;
+    width : 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding : 0 40px;
+    margin-top: 18px;
+}
+.left{
+    width : 300px;
+}
+.right{
+    margin-right: 40px;
+    width: 500px;
+    margin : 20px;
+}
+.left-div{
+    display: flex;
+    align-items: center;
+    margin : 20px 0;
+}
+.left-div img{
+    display: flex;
+    flex-direction: row;
+    width : 25px;
+    margin-right: 7px;
+}
+.left-div p{
+    font-weight: 600;
+    font-size: 16px;
+}
+p a{
+    color: white;
+    text-decoration: none;
+}
+.right h3{
+    font-size: 18px;
+}
+.right p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+@media(max-width : 800px){
+    footer{
+        flex-direction: column;
+    }
+    .left{
+        width : 80%;
+        padding : 0 auto;
+    }
+    .left-div{
+        justify-content: center;
+    }
+    .right{
+        text-align: center;
+        width: 80% !important;
+    }
+    .right p{
+        text-align: center;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .right h3{
+        font-size: 17px;
+        margin-bottom: 20px;
+        margin-left: 8px;
+    }
+    .left-div img{
+        display: flex;
+        flex-direction: row;
+        width : 25px;
+        margin-right: 7px;
+        margin-left: 50px;
+    }
+    .left-div p{
+        font-size : 13px;
+    }
+    .jalan{
+        margin-left: 18px;
+    }
+    .map{
+        margin-left: 20px;
+    }
+}
+

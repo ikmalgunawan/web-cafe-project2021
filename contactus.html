@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./CSS/stylecontact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <script defer src="./JS/scriptcontact.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="contact">
+            <h3>Contact Us</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home _page(update).html">Home</a></li>
+                <li><a href="#">Menu</a>
+                    <ul class="menu">
+                        <li><a href="beverages.html">Beverages</a></li>
+                        <li><a href="dessert.html">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="free">
+        <marquee scroolldelay="700"><img src="./Image/free foto web.png" alt=""></marquee>
+    </div>
+    <div class="contactbox">
+        <div class="box1">
+            <div class="title">
+                <h1>Caffein Line</h1>
+            </div>
+        </div>
+        <div class="box2">
+            <h2>Send Message</h2>
+            <form name="contactUs" action="" onsubmit="validateForm(event)" method="POST">
+                <div class="form-group">
+                    <label for="name">
+                        Name
+                        <p class="error" id="error-name"></p>
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        Email
+                        <p class="error" id="error-email"></p>
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="email@address.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">
+                        Message
+                        <p class="error" id="error-message"></p>
+                        <textarea class="textmessage" name="message" id="message"
+                            placeholder="Write Your Message"></textarea>
+                    </label>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Submit" onclick="validateForm()">
+                </div>
+        </div>
+    </div>
+    </form>
+    <footer>
+        <div class="left">
+            <div class="left-div">
+                <div class="map">
+                    <img src="./Image/maps.png" alt="">
+                </div>
+                <p class="jalan">01 Alam Sutera Street, South Tangerang City, Banten</p>
+            </div>
+            <div class="left-div">
+                <img src="./Image/whatsapp.png" alt="">
+                <p>+62812-1111-2222</p>
+            </div>
+            <div class="left-div">
+                <img src="./Image/mail.png" alt="">
+                <p>
+                    <a href="">caffeinline@gmail.com</a>
+                </p>
+            </div>
+            <div class="left-div">
+                <img src="./Image/ig-logo.png" alt="">
+                <p>
+                    <a href="">caffeinline.id</a>
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <h3>About Us</h3>
+            <p>Caffein Line is a cafe that provides various menus such us coffee, tea and dessert. We provide delivery
+                services for customers who want to order from home. We are ready to serve the order of our customer.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
